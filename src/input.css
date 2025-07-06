@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root{
+      /* ## Colors
+
+      ### Primary */
+
+      --Purple-50: hsl(260, 100%, 95%);
+      --Purple-300: hsl(264, 82%, 80%);
+      --Purple-500: hsl(263, 55%, 52%);
+
+      /* ### Neutral */
+
+      --White: hsl(0, 0%, 100%);
+      --Grey-100: hsl(214, 17%, 92%);
+      --Grey-200: hsl(0, 0%, 81%);
+      --Grey-400: hsl(224, 10%, 45%);
+      --Grey-500: hsl(217, 19%, 35%);
+      --Dark-blue: hsl(219, 29%, 14%);
+      --Black: hsl(0, 0%, 7%);
+}
+
+.card{
+      @apply p-8 flex flex-col justify-start gap-3 rounded-[0.5rem]
+}
+
+@media(max-width: 1179px){
+
+      .grid-mobile{
+            @apply grid-cols-2 grid-rows-4
+      }
+
+      .card1-mobile{
+            @apply  col-start-1 col-end-3 row-start-1 row-end-2;
+      }
+
+      .card2-mobile{
+            @apply col-start-1 col-end-2 row-start-2 row-end-3;
+      }
+
+      .card3-mobile{
+            @apply col-start-1 col-end-2 row-start-3 row-end-4;
+      }
+
+      .card4-mobile{
+            @apply col-start-2 col-end-3 row-start-2 row-end-4;
+      }
+
+      .card5-mobile{
+            @apply col-start-1 col-end-3 row-start-4 row-end-5;
+      }
+}
+
+@media(max-width: 750px){
+      .flex-mobile{
+            display: flex;
+            flex-direction: column;
+      }
+}
